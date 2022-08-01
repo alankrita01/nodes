@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    form{
+      background-color: orange;
+      margin-left:450px;
+      text-align: center;
+      width: 600px;
+      height:200px;
+    }
+    h3{
+      color:orange;
+      text-align: center;
+    } 
+    p{
+      text-align: center;
+    }
+    input[type=text]{
+      width:206px;
+    }
+    input[type=email]{
+      width:206px;
+    }
+    input[type=tel]{
+      width:206px;
+    }
+    input[type=date]{
+      width:100px;
+    }
+    input[type=time]{
+      width:100px;
+    }
+    hr{
+      height:5px;
+    }
+  </style>
+</head>
+<body>
+  <h3 >Book a call</h3>
+      <p >Book a call shot and our representative will call you within 1hr of selected time</p>
+      <hr>
+    <form action="#" onsubmit="registerUser(event)" >
+      
+      <label for="username">Name:</lable><br>
+      <input type="text" id="username" name="username"><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br>
+      <label for="phone">Phone:</label><br>
+      <input type="tel" id="phone" name="phone"><br>
+      <lable for="date">Time for Call:</lable><br>
+      <input type="date" id="date" name="date">
+      <label for="time"></label>
+      <input type="time" id="time" name="time"><br>
+      <button>GET A CALL</button>
+      
+    </form>
+  <script>
+      function registerUser(){
+        event.preventDefault();
+       const name= document.getElementById('username').value;
+       console.log(name);
+
+       const email= document.getElementById('email').value;
+       console.log(email);
+
+       const phone= document.getElementById('phone').value;
+       console.log(phone);
+
+       const date= document.getElementById('date').value;
+       console.log(date);
+
+       const time= document.getElementById('time').value;
+       console.log(time);
+      }
+  </script>
+</body>
+</html>
